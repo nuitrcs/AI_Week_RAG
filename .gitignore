@@ -6,14 +6,15 @@ dist/
 wheels/
 *.egg-info
 
-# 
+# Security
 .env
 
 # Virtual environments
 .venv
 
-# Instructor only files
+# Instructor only files and misc
 get_data.ipynb
 clean_data.ipynb
 data/Songs_Raw.csv
 data/horses_lyrics.csv
+*/*.DS_Store
