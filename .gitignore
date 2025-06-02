@@ -13,8 +13,10 @@ wheels/
 .venv
 
 # Instructor only files and misc
+**/.DS_Store
 get_data.ipynb
 clean_data.ipynb
 data/Songs_Raw.csv
 data/horses_lyrics.csv
-**/.DS_Store
+rag_workshop.index
+RAG_basics.pptx
