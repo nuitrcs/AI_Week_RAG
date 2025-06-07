@@ -19,4 +19,6 @@ clean_data.ipynb
 data/Songs_Raw.csv
 data/horses_lyrics.csv
 rag_workshop.index
-RAG_basics.pptx
+dev_notes.txt
+images/
+data/shakespeare_plays.csv
