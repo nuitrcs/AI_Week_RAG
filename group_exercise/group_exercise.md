@@ -21,6 +21,9 @@ Now is your turn to create a RAG system from beginning to end!
 - If you have an exciting dataset you want to try RAG on, and a research question accompanying it, feel free to propose a new group!
 - You may want to experiment with other models for embedding or generation. For example, nomic-ai's embedding models are pretty popular, you can check others [here](https://huggingface.co/spaces/mteb/leaderboard). Note that if you use other models you must consider a few extra things, for example size (some are a few GBs in size), security (they must be from trusted institutions, some will require to run extra code that you must trust), task specificity (you may need to add to your queries that you are doing semantic search, for example) and modality (are they for text, for images, for sound, multimodal?).
 
+## Choosing an index
+For large datasets, try HNSW.
+
 ## Cases
 
 ### Option A: Shakespeare's Plays
@@ -29,8 +32,8 @@ Now is your turn to create a RAG system from beginning to end!
 
 The file `shakespeare_plays.csv` contains the text of (all?) Shakespeare's plays. I got it from
 [this kaggle user](https://www.kaggle.com/datasets/guslovesmath/shakespeare-plays-dataset). I've also prepared two other versions of the dataset you may want to use (see `supplementary.ipynb` for preparation):
-- `[ZZZZZZ]`, which is separated by dialogue turn, instead of by lines.
-- `[ZZZZZZ]`, which adds 5 lines before and after to account for context.
+- `shakespeare_plays_by_speech.ipynb`, which is separated by dialogue turn (speech), instead of by lines.
+- `shakespeare_plays_by_context.ipynb`, which adds $5$ lines before and after to account for context.
 
 **Question 1**
 
