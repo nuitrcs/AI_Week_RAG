@@ -16,7 +16,8 @@ If you are working locally, the following files will help you create a virtual e
 
 
 ## Working on Google Colab?
-- Google Colab Notebook [here](https://colab.research.google.com/github/nuitrcs/AI_Week_RAG/blob/main/rag.ipynb)
+- RAG - Part 1 [here](https://colab.research.google.com/github/nuitrcs/AI_Week_RAG/blob/main/rag_001.ipynb)
+- RAG - Part 2 [here](https://colab.research.google.com/github/nuitrcs/AI_Week_RAG/blob/main/rag_002.ipynb)
 
 ## Working locally?
 We don't have much time to help you get things to work locally, so I will assume you know mostly know how to create and manage environments. If you run into problems please switch to Google Colab.
