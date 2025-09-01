@@ -22,17 +22,43 @@ If you are working locally, the following files will help you create a virtual e
 ## Working locally?
 We don't have much time to help you get things to work locally, so I will assume you know mostly know how to create and manage environments. If you run into problems please switch to Google Colab.
 
-After you clone this repo, you'll need to create a new virtual environment and install the relevant dependencies. Here's a quick how-to for `Anaconda` and for `uv`.
+After you clone this repo, you'll need to create a new virtual environment and install the relevant dependencies. Here's a quick how-to for `conda`, the `Anaconda Navigator` and for `uv`.
 
-**Conda / Anaconda**
+### Conda
 
-Create a new conda environment. Install the packages listed in the `dependencies` section of the *pyproject.toml* file. If you use the anaconda navigator, you can do this using the point and click interface (I will show this option to the class).
+On the command line, run:
+```bash
+conda create --name rag-workshop-env -c conda-forge python=3.11 jupyter pandas transformers sentence-transformers datasets
+```
+Followed by:
+```bash
+conda install --name rag-workshop-env -c pytorch faiss-cpu=1.12.0
+```
 
-**uv / pyenv / etc.**
+Now, if you have ollama installed already in your computer, and you want to use it. The also run:
+```bash
+conda activate rag-workshop-env
+```
+followed by
+```bash
+pip install ollama
+```
+
+### Anaconda Navigator
+
+I will show how to create an environment using the Anaconda Navigator :-) We will need:
+- jupyter
+- pandas
+- transformers
+- sentence-transformers
+- datasets
+- faiss-cpu
+
+### uv / pyenv / etc.
 
 If you are using another environment management tool, I'll let you figure it out yourself. For example, if you have `uv` this is quite straightforward, once you clone the repo, on the repo's root directory in the terminal you have to do:
 ```bash
-# MacOS /Linux
+# MacOS / Linux
 uv sync
 source .venv/bin/activate
 
@@ -43,7 +69,6 @@ uv sync
 
 
 ## Miscellaneous
---REVISE--
 
 If you're running into threading conflicts due to `umap`clashing with `faiss` or `transformers`, this may help.
 
