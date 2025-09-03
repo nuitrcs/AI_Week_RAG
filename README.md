@@ -44,16 +44,6 @@ followed by
 pip install ollama
 ```
 
-### Anaconda Navigator
-
-I will show how to create an environment using the Anaconda Navigator :-) We will need:
-- jupyter
-- pandas
-- transformers
-- sentence-transformers
-- datasets
-- faiss-cpu
-
 ### uv / pyenv / etc.
 
 If you are using another environment management tool, I'll let you figure it out yourself. For example, if you have `uv` this is quite straightforward, once you clone the repo, on the repo's root directory in the terminal you have to do:
