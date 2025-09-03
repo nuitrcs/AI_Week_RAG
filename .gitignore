@@ -24,3 +24,5 @@ dev_notes.txt
 dev_notes.md
 dev_images/
 test_problems/
+backup/shake_plays_embeddings.npy
+backup/shake_subset_plays_embeddings.npy

@@ -11,6 +11,9 @@ Now is your turn to create a RAG system from beginning to end!
 5. Build the RAG system from scratch, and present it as a tool for answering the research question.
 6. We will stop at xx:xx. We will then present the final product and share any tips or challenges we encountered as a team.
 
+### Colab GPU Limit Backup Plan
+If we hit the GPU limit in Colab. I've pre-computed embeddings for your exercises (I needed to drastically subset the data to fit it in github though). You still need to embed your individual queries, but that shouldn't take that long. If you use my pre-computed embeddings, you must use the same model I use (*all-mpnet-base-v2*) to embed your queries.
+
 ### Team Notes
 - Make sure everyone in your team has time and space to express themselves, and that all opinions and ideas are considered equally.
 - Remember that some people speak softer, or with fewer words. Loudest is not always more valid!
@@ -29,8 +32,8 @@ Now is your turn to create a RAG system from beginning to end!
 
 The file `shakespeare_plays.csv` contains the text of (all?) Shakespeare's plays. I got it from
 [this kaggle user](https://www.kaggle.com/datasets/guslovesmath/shakespeare-plays-dataset). I've also prepared two other versions of the dataset you may want to use (see `supplementary.ipynb` for preparation):
-- `shakespeare_plays_by_speech.ipynb`, which is separated by dialogue turn (speech), instead of by lines.
-- `shakespeare_plays_by_context.ipynb`, which adds $5$ lines before and after to account for context.
+- `shakespeare_plays_by_speech.csv`, which is separated by dialogue turn (speech), instead of by lines.
+- `shakespeare_plays_by_context.csv`, which adds $5$ lines before and after to account for context.
 
 **Question 1**
 
